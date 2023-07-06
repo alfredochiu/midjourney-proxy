@@ -193,7 +193,7 @@ public class SubmitController {
 		} catch (MalformedURLException e) {
 			return SubmitResultVO.fail(ReturnCode.VALIDATION_ERROR, "base64格式错误");
 		}
-		log.debug(dataUrlList)
+		// log.debug(dataUrlList)
 		Task task = newTask(blendDTO);
 		task.setAction(TaskAction.BLEND);
 		task.setDescription("/blend " + task.getId() + " " + dataUrlList.size());
